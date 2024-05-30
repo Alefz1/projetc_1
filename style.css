@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Viaoda+Libre&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box    
+}
+
+html{
+    font-size: 62,5%;
+    font-family:  "Roboto", sans-serif;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #424242;
+    --secondary-color: #ffd000;
+    --tertiary-color: #003463;
+    --quaternary-color: #e9e9e9;
+}
+
+.navList-item:hover a{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    transition: padding 0.2s ease;
+}
+
+.navList-item:active a{
+    background-color: #424242;
+    transition: background-color 0.1s ease;
+    color: var(--secondary-color);
+}
+
+.buttom-banner:hover{
+    width: 14rem;
+    transition: width 0.2s ease;
+}
+
+.buttom-banner:active{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.buttom-more:hover{
+    padding: 1rem 4rem; 
+    transition: padding 0.2s ease;
+}
+
+.buttom-more:active{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.navContainer{
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.bannerContainer{
+    background-image: linear-gradient(to top, var(--secondary-color), #ffffff);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cursosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schoolContainer{
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+
+.navMenu img{
+    margin-bottom: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+.navList{
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin-right: 5rem;
+    flex-wrap: nowrap;
+    min-width: 25rem;
+}
+
+.navList-item a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 1px solid var(--secondary-color);
+    padding: 0.8rem 1rem;
+    transition: color 0.2s ease;
+    transition: padding 0.2s ease;
+   
+}
+
+.textBanner{
+    display: flex;
+    flex-direction: column;
+    min-width: 2rem;
+    margin-left: 1rem;
+    z-index: 2;
+}
+
+.textBanner h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    max-width: 26rem;
+    min-width: 13rem;
+}
+
+.textBanner a{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    background-color: #ffbb00;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    width: 12rem;
+    border-radius: 0.2rem;
+    margin-top: 3rem;
+    transition: width 0.2s ease;
+}
+
+.bannerContainer img{
+    min-width: 40rem;
+    z-index: 1;
+}
+
+.cardsContainer{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.cardList-item{
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.8rem;
+    padding-bottom: 1.5rem;
+}
+
+.cardList-item img{
+    margin: -0.1rem;
+    
+}
+ 
+.cardList-item h3{
+    padding: 0.5rem;
+}
+
+.cardList-item p{
+    padding: 0.5rem;
+}
+
+.cursosContainer h2{
+    font-size: 2.0rem;
+    margin: 3rem;
+}
+
+.cursosContainer a{
+    margin: 2rem;
+    padding: 1rem 3rem;
+    background-color: #ffbb00;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    transition: padding 0.2s ease;
+}
+
+.schoolContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 85vh;
+}
+
+.schoolContainer{
+    background-image: url(imagens/nossa-escola.png);
+    background-repeat: no-repeat;    
+    background-position: bottom left;
+}
+
+.textSchool-container{
+    font-size: 1.3rem;
+    width: 30rem;
+    translate: 20rem;
+}
+
+.textSchool-container h2{
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+}
+
+.contactContainer{
+    height: 100vh;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactContainer h2{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
